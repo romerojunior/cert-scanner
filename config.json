@@ -1,0 +1,23 @@
+{
+    "sources": {
+        "filesystem": {
+            "scanPaths": [
+                ".",
+                "/tmp",
+                "/opt"
+            ]
+        },
+        "f5": {
+            "user": "admin",
+            "password": "secret",
+            "url": "https://example.local",
+            "port": 443
+        }
+    },
+    "destination": {
+        "aws": {
+            "profile": "scanner",
+            "url": "https://sqs.region.amazonaws.com/123123/example"
+        }
+    }
+}
